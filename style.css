@@ -1,4 +1,71 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  background-color: orange;
+}
+
+.wrapper {
+  max-width: 800px;
+  background-color: lightgray;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  /* padding: 20px; */
+}
+
+
+
+img {
+  width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.box {
+  height: 300px;
+
+}
+
+#kiste1 {
+  background-color: blue;
+  order: 1;
+}
+
+#kiste2 {
+  background-color: red;
+  order: 2;
+}
+
+#kiste3 {
+  background-color: green;
+  order: 0;
+}
+
+@media (min-width: 1024px) {
+  .flex-container {
+    display: flex;
+  }
+
+	.box {
+	  width: 300px;
+	
+
+	}
+	.float-right {
+	  float: left;
+	  width: 200px;
+	}
+  #kiste1 {
+    background-color: lightblue;
+  }
+  #kiste3 {
+    background-color: turquoise;
+  }
+}
